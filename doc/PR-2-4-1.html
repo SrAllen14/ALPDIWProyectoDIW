@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-4-1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+            
+            section{
+                margin: 10px;
+            }
+            
+            div{
+                width: 300px;
+                height: 50px;
+                background-color:  #BBBBBB;
+                margin: 10px;
+                padding: 0;
+                line-height: 50px;
+            }
+            
+            div:first-child{
+                background-color: #115599;
+            }
+            
+            div:last-child{
+                background-color: #995511;
+            }
+            
+            /* ***************************** */
+            
+            ul{
+                width: 300px;
+            }
+            li:nth-child(2){
+                background-color: #FF0000;
+            }
+            
+            li:nth-child(4){
+                background-color: #BC8F8F;
+            }
+            
+            li:nth-last-child(2){
+                background-color: #FF0000;
+            }
+            
+            p:only-child{
+                background-color: #7CFC00;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>:first-child y :last-child</p>
+            <section>
+                <div>Párrafo 1</div>
+                <div>Párrafo 2</div>
+                <div>Párrafo 3</div>
+                <div>Párrafo 4</div>
+            </section>
+
+            <p>:nth-child() y :nth-last-child()</p>
+            <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+                <li>Option 6</li>
+            </ul>
+
+            <p>:only-child</p>
+            <div>
+                <p>Párrafo simple</p>            
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </body>
+</html>
