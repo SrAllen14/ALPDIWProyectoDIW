@@ -93,21 +93,6 @@
             padding: 10px;
         }
 
-        .progress-bar {
-            width: 200px;
-            height: 10px;
-            background-color: #CCCCCC;
-            margin: 5px auto;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .progreso {
-            width: 25%;
-            height: 100%;
-            background-color: #007BFF;
-        }
-
     </style>
 </head>
 <body>
@@ -161,18 +146,18 @@
         <aside class="lateral">
             <div class="bloque-lateral">
                 <p>Aquí tenemos nuestra seccion de links interesantes</p>
-                <ul>
-                    <li>Elemento: details</li>
-                    <li>Lista datos summary</li>
-                </ul>
+                <p>Elemento: details</p>
+                <details>
+                    <p>Lista datos summary</p>
+                </details>
             </div>
         </aside>
     </main>
 
     <footer>
         <p>©Todos los derechos reservados.</p>
-        <div class="progress-bar">
-            <div class="progreso"></div>
+        <div class="barra">
+            <p>Progress: <meter min="10" max="300" value="100"></meter></p>         
         </div>
     </footer>
 
