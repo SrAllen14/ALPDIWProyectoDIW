@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Uso de hover, visited, active, link</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family: Verdana, sans-serif;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                
+                & ul{
+                    width: 65%;
+                    background-color: black;
+                    padding: 10px;
+                    margin: 10px;
+                    list-style: none;
+                    
+                    & li{
+                        width: 80%;
+                        height: 48px;
+                        background-color: #F5BEC8;
+                        margin: 10px;
+                        text-align: center;
+                        line-height: 48px;
+                        transition: all 0.5s ease;
+                        
+                        & a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                        
+                        &:hover{
+                            margin-left: 40px;
+                            background-color: #73007D;
+                        }
+                    }
+                }
+                /* ************************************ */
+                
+                & nav{
+                    width: 70%;
+                    height: 74px;
+                    background-color: black;
+                    padding: 10px;
+                    text-align: center;
+                    
+                    margin: 10px 10px 60px 10px;
+                    
+                    & a{
+                        text-decoration: none;
+                        width: 20%;
+                        height: 70%;
+                        display: inline-block;
+                        border-radius: 5px;
+                        text-align: center;
+                        line-height: 35px;
+                        transition: all 0.5s ease-out;
+                        
+                        &:link{
+                            background-color: #FFFFFF;
+                            color: #CD7094;
+                        }
+                        
+                        &:visited{
+                            background-color: red;
+                            color: white;
+                        }
+                        
+                        &:hover{
+                            background-color: lightskyblue;
+                            color: yellow;
+                        }
+                        
+                        &:active{
+                            background-color: yellowgreen;
+                            color: black;
+                        }
+                    }
+
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <ul>
+                <li><a href="#">1 opción</a></li>
+                <li><a href="#">2 opción</a></li>
+                <li><a href="#">3 opción</a></li>
+                <li><a href="#">4 opción</a></li>
+            </ul>
+            
+            <nav>
+                <a href="https://www.educa.jcyl.es/es">EDUCACYL</a>
+                <a href="https://www.marca.com/">MARCA</a>
+                <a href="https://www.youtube.com/">VIDEOS</a>
+                <a href="https://unsplash.com/es/">IMÁGENES</a>
+            </nav>
+        </div>
+    </body>
+</html>
