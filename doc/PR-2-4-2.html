@@ -25,16 +25,46 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             }
             /*
                 Colores el cuadro 6 
-            div:nth-of-type(6){
-                background-color: green;
-            }
+                div:nth-of-type(6){
+                    background-color: green;
+                }
             */
             
-            /* Colorea los cuadro 3, 6, 9, 12, 15 y 18 */
+            /* Colorea los cuadro 3, 6, 9, 12, 15 y 18 
             
-            div:nth-of-type(n+8):nth-of-type(-n+20){
-                background-color: green;
-            }
+                div:nth-of-type(3n){
+                    background-color: green;
+                }
+            */
+            
+            /*
+                Colorea los cuadros del 8 al 20
+            
+                div:nth-of-type(n+8):nth-of-type(-n+20){
+                    background-color: green;
+                }
+            */
+            
+            /*
+                Colorea los cuadros 5, 8, 11, 14, 17, 20, 23
+                div:nth-of-type(3n+5){
+                    background-color: green;
+                }
+            */
+            
+            /*
+                Colorea los cuadros 3 y 12
+                div:nth-of-type(-9n+12){
+                    background-color: green;
+                }
+            */
+            
+            /*
+                Colorea los cuadros 12 y 18
+                div:nth-of-type(6n+12):nth-of-type(-6n+18){
+                    background-color: green;
+                }
+            */
         </style>
     </head>
     <body>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-4-1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: sans-serif;
+              }
+
+              section{
+                display: inline-block;
+                vertical-align: top;
+              }
+              .drch{
+                float:right;
+              }
+              p {
+                background-color:lightgray;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                
+                & :nth-of-type(1){
+                    background-color: white;
+                }
+              }
+              .par1{
+                margin-bottom: 50px;
+              }
+              .par1 p:first-child{
+                background-color: blue;
+              }
+              .par1 p:last-child{
+                background-color: peru;
+              }
+              .lista li:nth-child(2),.lista li:nth-child(5){
+                background-color: red;
+              }
+              .lista li:nth-child(4){
+                background-color: palevioletred;
+              }
+              .lista{
+                margin-bottom: 200px;
+              }
+              .solo p:only-child{
+                background-color: chartreuse;
+              }
+              .par2 p:first-of-type{
+                background-color: aqua;
+              }
+              .par2 div:last-of-type{
+                background-color: yellow;
+              }
+              .par2{
+                margin-bottom:40px ;
+              }
+              .par3 p:nth-of-type(2){
+                background-color: darkblue;
+                color: white;
+              }
+              .par3 strong:nth-last-child(3){
+                background-color: darkgoldenrod;
+                color: white;
+              }
+              .par3{
+                margin-bottom: 40px;
+              }
+              .par4 span:only-of-type{
+                background-color:coral;
+              }
+        </style>
+    </head>
+    <body>
+        <section class="izq">
+            <div class="par1">
+                <p>Párrafo 1</p>
+                <p>Párrafo 2</p>
+                <p>Párrafo 3</p>
+                <p>Párrafo 4</p>
+            </div>
+
+            <p>:nth-child() y :nth-last-child()</p>
+            <div class="lista">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                    <li>Option 4</li>
+                    <li>Option 5</li>
+                    <li>Option 6</li>
+                </ul>
+            </div>
+
+            
+            <div class="solo">
+                <p>Párrafo simple</p>            
+            </div>
+        </section>
+        <section class="drch">
+            <div class="par2">
+                <p>Párrafo uno</p>
+                <span>Texto en span</span>
+                <p>Párrafo dos</p>
+                <strong>Texto en strong</strong>
+                <div>Esto es un div</div>
+                <p>Párrafo tres</p>
+            </div>
+            <div class="par3">
+                <p>Párrafo uno</p>
+                <span>Texto en span</span>
+                <p>Párrafo dos</p>
+                <strong>Text in strong</strong>
+                <div>This is a div</div>
+                <p>Párrafo tres</p>
+            </div>
+            <div class="par4">
+                <p>Párrafo uno</p>
+                <span>Párrafo dos</span>
+                <p>Párrafo tres</p>
+            </div>
+        </section>
+    </body>
+</html>
