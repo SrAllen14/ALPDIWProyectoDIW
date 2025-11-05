@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Absolute</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            main{
+                width: 600px;
+                height: 600px;
+                background-color: gray;
+                position:relative;
+            }
+            div{
+                position: absolute;
+                
+            }
+            .box1, .box2{ 
+                width: 500px;
+                height: 90px;
+            }
+            .box3, .box4{
+                width: 125px;
+                height: 250px;
+            }
+            
+            .box1{
+                background-color: yellow;
+                left: 50px;
+                bottom: 200px;
+            }
+            
+            .box2{
+                background-color: red;
+                
+                left: 50px;
+                top: 200px;
+                
+            }
+            
+            .box3{
+                background-color: blue;
+                left: 120px;
+                top: 175px;
+            }
+            
+            .box4{
+                background-color: green;
+                right: 120px;
+                top: 175px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+            <div class="box4">4</div>
+        </main>
+    </body>
+</html>

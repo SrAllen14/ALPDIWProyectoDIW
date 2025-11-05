@@ -9,54 +9,234 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            main{
-                width: 600px;
-                height: 400px;
-                background-color: gray;
+            *{
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
             }
-            div{
+            
+            .container{
                 position: relative;
+                width: 1200px;
+                height: 700px;
             }
-            .box1, .box2{ 
-                width: 150px; 
-                height: 150px;
-            }
-            .box3, .box4{
-                width: 300px;
+            
+            header{
+                width: 1000px;
+                top: 0;
                 height: 100px;
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+                
+                & b{
+                    color: black;
+                }
+                
+                & h1{
+                    color: gray;
+                }
+                
+                & a{
+                    position: absolute;
+                    right: 250px;
+                    top: 20px;
+                }
+            }
+            
+            main{
+                position: absolute;
+                width: 900px;
+                height: 500px;
+                
+                div{
+                    position: absolute;
+                    width: 200px;
+                    height: 200px;
+                    background-color: #2F7388;
+                    font-size: 1.3rem;
+                    color: white;
+                }
             }
             
             .box1{
-                background-color: yellow;
-                top: 50px;
-                left: 300px;
+               
             }
             
             .box2{
-                background-color: red;
-                top: 20px;
-                left: 60px;
+                left: 210px;
             }
             
             .box3{
-                background-color: blue;
-                top: -220px;
-                left: 110px;
+                left: 420px;
             }
             
             .box4{
-                background-color: green;
-                top: -200px;
-                left: 110px;
+                left: 630px;
+            }
+            
+            .box5{
+                top: 257px;
+                background-image: url("https://www.educa.jcyl.es/fp/es/formacion-profesorado-fp/deteccion-necesidades-formacion-2026.ficheros/1128954-Teachers_35749.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            
+            .box6{
+                top: 257px;
+                left: 210px;
+                background-image: url("https://www.educa.jcyl.es/fp/es/programas-europeos/ayudas-complementarias-alumnado-fp-grado-superior-beneficia.ficheros/1568209-Mapa4.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            .box7{
+                top: 257px;
+                left: 420px;
+                background-image: url("https://www.educa.jcyl.es/fp/es/skills-campeonatos-formacion-profesional/euroskills/euroskills-2025.ficheros/1805164-Imagen5.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            
+            .box8{
+                top: 257px;
+                left: 630px;
+                background-image: url("https://www.educa.jcyl.es/fp/es/formacion-profesorado-fp/actividades-formativas-profesorado-formadores-fp-ano-2025.ficheros/1783438-Novedades%20cursos%20FP.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            
+            aside{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 200px;
+                height: 600px;
+                
+                div{
+                    position: absolute;
+                    width: 350px;
+                    height: 150px;
+                    background-color: #2F7388;
+                }
+            }
+            
+            .box9{
+                background-image: url("https://www.educa.jcyl.es/es/banners/1577553-Logo%20TodoFP%20nuevo.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            .box10{
+                top: 150px;
+                background-image: url("https://www.educa.jcyl.es/es/banners/1577554-Ciceron.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            .box11{
+                top: 300px;
+                background-image: url("https://www.educa.jcyl.es/es/banners/1577555-Distancia.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            .box12{
+                top: 450px;
+                background-image: url("https://www.educa.jcyl.es/es/banners/1577556-SedeElectronica.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            
+            footer{
+                position: absolute;
+                bottom: 0;
+                height: 100px;
+                width: 1000px;
+                
+                div{
+                    position: absolute;
+                    width: 200px;
+                    height: 50px;
+                    background-color: #2F7388;
+                    border: 3px solid white
+                }
+            }
+            
+            .box13{
+                background-image: url("https://www.educa.jcyl.es/es/menus/1513606-Noticias%202.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            .box14{
+                left: 250px;
+                background-image: url("https://www.educa.jcyl.es/es/menus/1464707-PremiosFP2.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            .box15{
+                left: 500px;
+                background-image: url("https://www.educa.jcyl.es/es/menus/1406912-Excelencia2.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
+            }
+            .box16{
+                left: 750px;
+                background-image: url("https://www.educa.jcyl.es/es/menus/1462513-VI%20PLAN%20FP%202.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: white
             }
         </style>
     </head>
     <body>
-        <main>
-            <div class="box1">1</div>
-            <div class="box2">2</div>
-            <div class="box3">3</div>
-            <div class="box4">4</div>
-        </main>
+        <div class="container">
+            <header>
+                <h1><b>Novedades</b> en formación profesional</h1>
+                <a href="">Ver Todas...</a>
+            </header>
+            <main>
+                
+                <div class="box1">Ayudas complementarias al alumnado de FP Grado Superior beneficiario de becas Erasmus+</div>
+                <div class="box2">
+                    Euroskills 2025
+                </div>
+                <div class="box3">Actividades formativas profesorado y formadores FP, año 2025</div>
+                <div class="box4">Premios Extraordinarios de Formación Profesional de Castilla y León</div>
+                <div class="box5"></div>
+                <div class="box6"></div>
+                <div class="box7"></div>
+                <div class="box8"></div>
+            </main>
+            <aside>
+                <div class="box9"></div>
+                <div class="box10"></div>
+                <div class="box11"></div>
+                <div class="box12"></div>
+            </aside>
+            <footer>
+                <div class="box13"></div>
+                <div class="box14"></div>
+                <div class="box15"></div>
+                <div class="box16"></div>
+            </footer>
+        </div>
     </body>
 </html>
