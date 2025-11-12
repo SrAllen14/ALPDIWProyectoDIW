@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-8-2-B</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Gill Sans', Calibri, sans-serif;
+                margin: 0;
+            }
+            
+            .container{
+                position: relative;
+                width: 600px;
+                height: 600px;
+            }
+            
+            input{
+                display: none;
+            }
+            
+            .container label:nth-child(3){
+                display: block;
+                background-color: #008080;
+                width: 136px;
+                height: 48px;
+                line-height: 48px;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 900;
+                border-radius: 5px;
+                padding: 0px 5px;
+                margin-top: 10px;
+            }
+            main{
+                position: absolute;
+                top: 30px;
+                width: 100%;
+                height: 100%;
+                background-color: #226546;
+            }
+            
+            main label{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                display: block;
+                width: 32px;
+                height: 32px;
+                text-align: center;
+                line-height: 32px;
+                background-color: #FF6347;
+                border-radius: 50%;
+            }
+            
+            main p{
+                position: absolute;
+                width: 70%;
+                height: auto;
+                background: #666666;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Ventana modal con :checked y radio buttons</h2>
+            <input type="radio" name="btns" id="btnOpen">
+            <label for="btnOpen" id="lblOpen">Mostrar modal</label>
+            <input type="radio" name="btns" id="btnClose">
+            
+            
+            <main>
+                <label for="btnClose" id="lblClase">X</label>
+                <p>LoremIpsumCarpeDiem</p>
+            </main>
+        </div>
+    </body>
+</html>
