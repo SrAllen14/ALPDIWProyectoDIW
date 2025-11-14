@@ -13,6 +13,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
+                font-family: verdana, sans-serif;
+                --mgNav: 5px;
             }
             
             .container{
@@ -20,12 +22,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 width: 98vw;
                 height: 98vh;
                 background-color: #3C456A;
-                border: 0.1px transparent;
+                border: 0.1px solid transparent;
             }
             
             nav{
                 position: relative;
-                width: 100%;
+                width: calc(100vw - var(mgNav));
                 height: 70px;
                 background-color: #4B7373;
                 margin: 5px;
@@ -52,14 +54,48 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 }
                 
                 & span:nth-child(1){
-                    top: 11px;
+                    top: 6px;
                 }
                 & span:nth-child(2){
-                    top: 26px;
+                    top: 22px;
                 }
                 & span:nth-child(3){
-                    top: 41px;
+                    top: 38px;
                 }
+            }
+            
+            input{
+                display: none;
+            }
+
+            main{
+                position: relative;
+                width: 100vw;
+                height: 90vh;
+                left: -100%;
+                transition: left .8s ease;
+            }
+            
+            main ul{
+                width: 240px;
+                height: 70vh;
+                background-color: #648278;
+                margin-left: var(--mgNav -1px);
+            }
+            
+            main ul a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                width: 100%;
+                height: 48px;
+                line-height: 48px;
+                padding-left: 10px;
+                border-bottom: 1px solid #CCCCCC;
+            }
+            a:hover{background-color: pink;}
+            #btnOpen:checked ~ main{
+                left: 0px;
             }
         </style>
     </head>
@@ -67,19 +103,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <div class="container">
             <nav>
                 <label for="btnOpen" id="lblOpen">
-                    <span><span><span></span></span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </label>
-                
             </nav>
             <input type="radio" name="btns" id="btnOpen">
+            <main>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                </ul>
+            </main>
             
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Alumnos</a></li>                
-                <li><a href="#">Secretaria</a></li>
-                <li><a href="#">Profesorado</a></li>
-
-            </ul>
         </div>
     </body>
 </html>

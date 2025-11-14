@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-8-3-B</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: verdana, sans-serif;
+                --mgNav: 5px;
+            }
+            
+            .container{
+                position: relative;
+                width: 100vw;
+                height: 100%;
+                background-color: #3C456A;
+                background-image: url(http://picsum.photos/id/313/1920/1080);
+                background-position: cover;
+                background-size: 100%;
+                background-attachment: fixed;
+                border: 0.1px solid transparent;
+            }
+            
+            nav{
+                position: relative;
+                width: calc(100vw - var(--mgNav));
+                height: 70px;
+                background-color: #4B7373;
+            }
+            
+            nav label{
+                display: block;
+                width: 56px;
+                height: 56px;
+                background-color: #787878;
+                position: relative;
+                top: 7px;
+                left: 7px;
+                border-radius: 5px;
+                
+                & span{
+                    display: block;
+                    position: relative;
+                    left: 3px;
+                    width: 50px;
+                    height: 4px;
+                    background-color: white;
+                }
+                
+                & span:nth-child(1){
+                    top: 6px;
+                }
+                & span:nth-child(2){
+                    top: 22px;
+                }
+                & span:nth-child(3){
+                    top: 38px;
+                }
+            }
+            
+            input{
+                display: none;
+            }
+
+            main{
+                position: relative;
+                width: 100vw;
+                height: 90vh;
+                left: -100%;
+                transition: left .8s ease;
+                top: -70px;
+            }
+            
+            main ul{
+                width: 240px;
+                height: 70vh;
+                background-color: #648278;
+                margin-left: calc(var(--mgNav) - 1px);
+                overflow-y: scroll;
+            }
+            
+            main ul a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                width: 100%;
+                height: 48px;
+                line-height: 48px;
+                padding-left: 10px;
+                border-bottom: 1px solid #CCCCCC;
+            }
+            a:hover{background-color: pink;}
+            #btnOpen:checked ~ main{
+                left: 0px;
+            }
+            
+            #lblClose{
+                display: block;
+                position: absolute;
+                width: calc(100vw - 240px);
+                left: 250px;
+                height: 100%;
+                top: 0;
+                background-color: transparent;
+            }
+            
+            article{
+                position: relative;
+            }
+            
+            article::before{
+                content: "Gonzalo";
+                display: block;
+                
+            }
+            
+            #lblClose::after{
+                content: "X";
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 50px;
+                background-color: orange;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <label for="btnOpen" id="lblOpen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </nav>
+            <input type="radio" name="btns" id="btnOpen">
+            <input type="radio" name="btns" id="btnClose">
+            <main>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alumnos</a></li>                
+                    <li><a href="#">Secretaria</a></li>
+                    <li><a href="#">Profesorado</a></li>
+                </ul>
+                <label for="btnClose" id="lblClose"></label>
+            </main>
+        </div>
+    </body>
+</html>
