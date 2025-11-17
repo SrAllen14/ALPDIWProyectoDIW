@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-8-4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Calibri, sans-serif;
+            }
+            
+            .container{
+                width: 600px;
+                height: 500px;
+                background-color: #E182F0;
+                position: relative;
+            }
+            
+            .btn{
+                position: relative;
+                width: 128px;
+                height: 48px;
+                background-color: black;
+                margin: auto;
+                top: calc(500px/3 - 48px);
+                color: white;
+                text-align: center;
+                line-height: 48px;
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+            .btn2{
+                top: 300px;
+            }
+            .btn1::before, .btn1::after{
+                content:"";
+                position: absolute;
+                width: 0%;
+                height: 5px;
+                background-color: white;
+                bottom: 0;
+                transition: all 0.3s ease;
+            }
+            
+            .btn1::before{
+                left: 50%;
+            }
+            .btn1::after{
+                right: 50%;
+            }
+            
+            .btn1:hover::before, .btn1:hover::after{
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="btn btn1">BOTON1</div>
+            <div class="btn btn2">BOTON2</div>
+        </div>
+    </body>
+</html>
