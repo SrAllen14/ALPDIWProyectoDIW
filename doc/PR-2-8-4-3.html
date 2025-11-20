@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-8-4-3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            
+            .container{
+                position: relative;
+            }
+            
+            .caja{
+                position: relative;
+                width: 400px;
+                height: 250px;
+                border-radius: 15px;
+                background-color: #D89A43;
+            }
+            
+            .caja *{
+                position: absolute;
+                display: inline-block;
+                padding-top: 10px;
+            }
+            
+            img{
+                top: 50%;
+                left: 50%;
+                translate: -50% -50%;
+            }
+            
+            h2{
+                margin-left: 50px;
+            }
+            
+            p{
+                right: 100px;
+            }
+            
+            .caja::before, .caja::after{
+                content: "";
+                position: absolute;
+                border: 25px solid transparent;
+            }
+            
+            .caja::before{
+                border-top: 25px solid #6a5acd;
+                bottom: -50px;
+                left: 40px;
+            }
+            
+            .caja::after{
+                border-bottom: 25px solid #fa8072;
+                top: -100px; left: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="caja">
+                <h2>Caja</h2>
+                <p>Parrafo</p>
+                <img src="http://picsum.photos/100/100" alt=""/>
+            </div>
+        </div>
+    </body>
+</html>
