@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-9-1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :root{
+                --mg: 15px;
+            }
+            
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            
+            body{
+                background: #818181;
+            }
+            .container{
+                width: calc(100vw - var(--mg));
+                margin: var(--mg);
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                *{
+                    border-radius: 5px;
+                }
+            }
+            
+            header{
+                background: #adfb95;
+                flex: 0 12vh;
+                display: flex;
+                padding: 5px;
+                flex: 0;
+                justify-content: space-between;
+                align-items: center;
+                
+                & input{
+                    height: 48px;
+                }
+                
+                & img{
+                    flex: 0 100px;
+                }
+                
+                & div{
+                    flex: 0 100px;
+                    height: 100px;
+                    background-color: #5eb8b8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .wrapper{
+                flex: 76vh;
+                width: 100%;
+                display: flex;
+                flex-flow: row;
+                
+                & nav{
+                    flex: 20%;
+                    height: 100%;
+                    background-color: #ee7f54;
+                }
+                
+                & main{
+                    flex: 80%;
+                    height: 100%;
+                    padding: 4px;
+                    background-color: #ca1341;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    & article{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background-color: black;
+                    }
+                    
+                    & article:nth-child(2){
+                        align-self: center;
+                    }
+                    
+                    & article:nth-child(3){
+                        align-self: end;
+                    }
+                }
+                
+                & aside{
+                    flex: 20%;
+                    height: 100%;
+                    background-color: #f6d702;
+                }
+            }
+            
+            footer{
+                flex: 12%;
+                background-color: #d4a0e0
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="https://picsum.photos/id/350/100/100" alt="" />
+                <input type="search" placeholder="search">
+                <img src="https://picsum.photos/id/352/100/100" alt="" />
+                <div>header</div>
+            </header>
+            <div class="wrapper">
+                <nav>nav</nav>
+                <main>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </main>
+                <aside>aside</aside>
+            </div>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>
