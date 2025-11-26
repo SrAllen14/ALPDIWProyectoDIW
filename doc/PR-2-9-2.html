@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-9-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :root{
+                --mg: 10px;
+                font-family: Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+            
+            .container{
+                width: calc(100vw - var(--mg)*2);
+                height: 100vh;
+                margin: 0 auto;
+                background-color: darkorchid;
+                display: flex;
+                flex-direction: column;
+                & *{
+                    text-align: center;
+                }
+            }
+            
+            header{
+                flex: 15vh;
+                background-color: #AABBCC;
+            }
+            
+            main{
+                flex: 85vh;
+                display: flex;
+                flex-direction: column;
+                
+                & nav{
+                    flex: 10%;
+                    background-color: #BBBB11;
+                }
+                
+                & section{
+                    flex: 75%;
+                    background-color: #AAFFFF;
+                }
+                
+                & aside{
+                    flex: 15%;
+                    background-color: #DEB887;
+                }
+            }
+            
+            footer{
+                flex: 10vh;
+                background-color: #FA8072;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>Encabezado</header>
+            <main>
+                <nav>Menú</nav>
+                <section>Contenido principal</section>
+                <aside>Barra lateral de publicidad</aside>
+            </main>
+            <footer>Pié de página</footer>
+        </div>
+    </body>
+</html>
