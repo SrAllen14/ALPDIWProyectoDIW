@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-9-5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: Verdana, sans-serif;
+            }
+            
+            nav{
+                width: 100vw;
+                height: 64px;
+                background-color: #5a5a87;
+                display: flex;
+            }
+            
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                font-size: 1.2rem;
+            }
+            
+            a:hover{
+                background-color: #96cdeb;
+            }
+            
+            @media(max-width: 576px){
+                nav{
+                    flex-flow: column;
+                    align-items: center;
+                    flex: 350px;
+                    & a{
+                        border-bottom: 1px solid #ccc;
+                        width: 100%;
+                        height: 56px;
+                    }
+                    
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#">&#10017</a>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">&#10017</a>
+            <a href="#">&#10017</a>
+        </nav>
+    </body>
+</html>
