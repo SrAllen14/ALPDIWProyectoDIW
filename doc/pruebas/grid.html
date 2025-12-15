@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>GRID</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                width: 700px;
+                height: 700px;
+                background-color: paleturquoise;
+                display: grid;
+                grid-template-columns: 200px 1fr 1fr;
+                grid-template-rows: 100px 200px 300px;
+                gap: 10px;
+            }
+            
+            article{
+                background-color: goldenrod;
+            }
+            
+            article:nth-of-type(1){
+                background-color: lawngreen;
+                grid-column: 2/3;
+                grid-row: 1/4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <article>Caja 1</article>
+            <article>Caja 2</article>
+            <article>Caja 3</article>
+            <article>Caja 4</article>
+            <article>Caja 5</article>
+            <article>Caja 6</article>
+            <article>Caja 7</article>
+            <article>Caja 8</article>
+            <article>Caja 9</article>
+        </div>
+    </body>
+</html>
