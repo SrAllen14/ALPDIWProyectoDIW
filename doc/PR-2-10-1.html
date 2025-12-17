@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-10-1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            
+            body{
+                background-color: gainsboro;
+                padding: 50px;
+            }
+            
+            .flex1{
+                width: 600px;
+                height: 600px;
+                background-color: #ccc;
+                display: flex;
+                flex-flow: column wrap;
+            }
+            
+            main{
+                width: 60%;
+                flex: 0 60%;
+                background-color: #cdcd91;
+            }
+            
+            section{
+                width: 60%;
+                flex: 0 25%;
+                display: flex;
+            }
+            
+            article:nth-last-of-type(1){
+                flex: 50%;
+                background-color: #230505;
+            }
+            
+            article:nth-last-of-type(2){
+                width: 100%;
+                flex: 50%;
+                background-color: #694b4b;
+                position: absolute;
+            }
+            
+            footer{
+                width: 60%;
+                flex: 0 15%;
+            }
+            
+            nav{
+                width: 40%;
+                flex: 0 20%;
+                background-color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex1">
+            <main>main</main>
+            <section>
+                <article>Article 1</article>
+                <article>Article 2</article>
+            </section>
+            <footer>Footer</footer>
+            <nav>Nav</nav>
+            <aside>Aside</aside>
+        </div>
+        <div class="flex2">
+            <main>main</main>
+            <section>
+                <article>Article 1</article>
+                <article>Article 2</article>
+            </section>
+            <footer>Footer</footer>
+            <nav>Nav</nav>
+            <aside>Aside</aside>
+        </div>
+    </body>
+</html>
