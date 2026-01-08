@@ -28,13 +28,38 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 height: 100%;
                 margin: auto;
                 display: grid;
+                grid-auto-rows: 400px;
+                row-gap: 10px;
+                padding: 5px;
                 
                 & .card{
                     width: 350px;
                     height: 400px;
                     display: grid;
-                    grid-template-columns: 400px;
+                    grid-template-columns: 350px;
                     grid-template-rows: 2fr 8fr;
+                    border-radius: 5px;
+                    
+                    & h2{
+                        margin-bottom: 0.3rem;
+                    }
+                    
+                    & p{
+                        margin-top: 0.3rem;
+                    }
+                    
+                    &:nth-child(1){
+                        background-color: #C8C8C8;
+                    }
+                    &:nth-child(2){
+                        background-color: #D67575;
+                    }
+                    &:nth-child(3){
+                        background-color: #A8BF31;
+                    }
+                    &:nth-child(4){
+                        background-color: #6AAF99;
+                    }
                 }
             }
         </style>
