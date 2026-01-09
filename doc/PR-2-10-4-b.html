@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-10-4-b</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            
+            nav{
+                width: 96%;
+                height: 100%;
+                background-color: #EBEBEB;
+            }
+            
+            .menu, .sbm1, .sbm2{
+                list-style: none;
+            }
+            
+            .menu{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                
+                & li{
+                    
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Opcion 1</a></li>
+                <li><a href="#">Opcion 2</a></li>
+                <li>
+                    <a href="#">Opcion 3</a>
+                    <ul class="sbm1">
+                        <li><a href="#">sbm1 op31</a></li>
+                        <li>
+                            <a href="#">sbm1 op32</a>
+                            <ul class="sbm2">
+                                <li><a href="#">sbm2 op321</a></li>
+                                <li><a href="#">sbm2 op322</a></li>
+                                <li><a href="#">sbm2 op323</a></li>
+                            </ul> <!--sbm2  -->
+                        </li>
+                        <li><a href="#">sbm1 op33</a></li>
+                    </ul>   <!--sbm1  -->
+
+                </li>
+                <li><a href="#">Opcion 4</a></li>
+                <li>
+                    <a href="#">Opcion 5</a>
+                    <ul class="sbm1">
+                        <li><a href="#">sbm1 op51</a></li>
+                        <li>
+                            <a href="#">sbm1 op52</a>
+                            <ul class="sbm2">
+                                <li><a href="#">sbm2 op521</a></li>
+                                <li><a href="#">sbm2 op522</a></li>
+                                <li><a href="#">sbm2 op523</a></li>
+                            </ul> <!--sbm2  -->
+                        </li>
+                        <li><a href="#">sbm1 op53</a></li>
+                    </ul>   <!--sbm1  -->
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
