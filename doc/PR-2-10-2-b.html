@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-2-10-2-b</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            
+            .wrapper{
+                height: 100dvh;
+                width: 95%;
+                margin: auto;
+                background-color: #F1F1F1;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 5px;
+                grid-template-areas: "hd hd hd hd" "nv mn mn as" "nv ft ft ft";
+            }
+            
+            header{
+                background-color: #D2691E;
+                grid-area: hd;
+            }
+            
+            nav{
+                background-color: #6495ED;
+                grid-area: nv;
+            }
+            
+            main{
+                background-color: #FF7F50;
+                grid-area: mn;
+            }
+            
+            aside{
+                background-color: #2E8B57;
+                grid-area: as;
+            }
+            
+            footer{
+                background-color: #C0C0C0;
+                grid-area: ft;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>Header</header>
+            <nav>Nav</nav>
+            <main>Main</main>
+            <aside>Aside</aside>
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>
