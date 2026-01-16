@@ -8,13 +8,87 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>PR-3-1-licencias</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .wrapper{
+                width: 100%;
+                height: 100dvh;
+                margin: auto;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+            }
+            
+            .mc{
+                position: relative;
+                width: 45%;
+                height: auto;
+                overflow: hidden;
+                
+                & .img{
+                    max-width: 100%;
+                    display: block;
+                    width: 500px;
+                    aspect-ratio: 1;
+                }                
+                
+                & .license{
+                    position: absolute;
+                    top: -100px;
+                    left: 5px;
+                    transition: all 0.5s ease;
+                }
+                
+                & .txtlc{
+                    position: absolute;
+                    color: white;
+                    botton: -100px;
+                    left: 5px;
+                    transition: all 0.5s ease;
+                    transition-delay: 0.5s;
+                }
+                
+                & a{
+                    color: white;
+                }
+                
+                &:hover .license{
+                    top: 5px;
+                }
+                
+                &:hover .txtlc{
+                    bottom: 5px;
+                }
+            }
+        </style>
     </head>
     <body>
         <h1>Practica derechos y licencias</h1>
         <div class="wrapper">
             <div class="mc">
-                <img class="img" src="images/guitarraCL.jpg" alt=""/>
-                <img class="license" src="images/copyright" alt="alt"/>
+                <img class="img" src="../webroot/images/guitarraCL.jpg" alt=""/>
+                <img class="license" src="../webroot/images/copyleft360.png" alt="alt" width="50"/>
+                <p class="txtlc">Imagen con derechos de autor</p>
+            </div>
+            <div class="mc">
+                <img class="img" src="../webroot/images/chestonCR.jpg" alt=""/>
+                <img class="license" src="../webroot/images/copyright640.png" alt="alt" width="50"/>
+                <p class="txtlc">Imagen con derechos de autor</p>
+            </div>
+            <div class="mc">
+                <img class="img" src="../webroot/images/flowerCC.jpg" alt=""/>
+                <img class="license" src="../webroot/images/copyleft360.png" alt="alt" width="50"/>
+                <p class="txtlc">Imagen con derechos de autor</p>
+            </div>
+            <div class="mc">
+                <img class="img" src="../webroot/images/leonaCC.jpg" alt=""/>
+                <img class="license" src="../webroot/images/copyright640.png" alt="alt" width="50"/>
+                <p class="txtlc">Imagen con derechos de autor</p>
             </div>
         </div>
     </body>
