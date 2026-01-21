@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-3-3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            img{
+                max-width: 100%;
+                display: block;
+            }
+            
+            .wrapper{
+                width: 95dvw;
+                height: 95dvh;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                place-items: center;
+                
+                & div{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            
+            div:nth-child(1) img{
+                border-radius: 34% 20% 22% 30% / 36% 26% 24% 31%;
+            }
+            
+            div:nth-child(2) img{
+                clip-path: ellipse(25% 40% at 50% 50%);
+            }
+            
+            div:nth-child(3) img{
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <img src="http://picsum.photos/id/201/100/100" alt="alt"/>
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/202/100/100" alt="alt"/>
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/203/100/100" alt="alt"/>
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/204/100/100" alt="alt"/>
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/211/100/100" alt="alt"/>
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/206/100/100" alt="alt"/>
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/210/100/100" alt="alt"/>
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/208/100/100" alt="alt"/>
+            </div>
+            <div>
+                <img src="http://picsum.photos/id/209/100/100" alt="alt"/>
+            </div>
+        </div>
+        
+        <!-- Mascaras svg -->
+        <svg class="mask">
+    <clipPath id="svgMask1" clipPathUnits="objectBoundingBox">
+        <path>
+    </clippath>
+        </svg>
+    </body>
+</html>
