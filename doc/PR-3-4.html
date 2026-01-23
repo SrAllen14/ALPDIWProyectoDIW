@@ -6,31 +6,30 @@
     <title>Ejemplo mascaras 1</title> 
     <style> 
         *{
-            margin: 0;
-            padding: 0; 
-            box-sizing: border-box; 
-        } 
-        
-        body{ 
-            width: 90vw;
-            height: 90vh; 
-            padding: 20px; 
-            margin: auto; 
-            background: radial-gradient(rgb(0, 247, 255) 20% , yellow 80%); 
-            background-repeat: no-repeat; background-size: 100% 100%; 
+            margin: 0;padding: 0;
+            box-sizing: border-box;
         }
-        
-        .wrapper{ 
-            width: 90%; 
-            height: 90%; 
+        body{
+            width: 90vw;height: 90vh;
+            padding: 20px;
             margin: auto;
-            background-image:url('http://picsum.photos/id/203/400/400');
-            background-size:contain; 
-            background-repeat: no-repeat; 
-            mask-image: url(./images/montain.png);
-            mask-size: contain; 
+            background: radial-gradient(rgb(0,247,255)20%, yellow 80%);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .wrapper{
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            background-image: url(./images/barcos.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            mask-image: url(./images/barcos.png);
+            /* mask-image: linear-gradient(black 30%, transparent 60%); */
+            mask-size: contain;
             mask-repeat: no-repeat;
-        } 
+        }
     </style>
 </head> 
 <body> 

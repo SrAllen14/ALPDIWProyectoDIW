@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-3-6-1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body{
+                width: 80vw;
+                margin: auto;
+                min-width: 480px;
+            }
+            
+            main{
+                width: 75%;
+                background-color: aquamarine;
+                margin: auto;
+
+                
+                /*
+                    El código comentado es lo mismo que el código de abajo: primero el nombre y luego el tipo de container.
+                
+                    container-name: cmain;
+                    container-type: inline-size;
+                */
+                
+                container: cmain / inline-size;
+            }
+            
+            aside{
+                width: 60%;
+                background-color: burlywood;
+                margin: auto;
+                margin-top: 20px;
+                container: caside / inline-size;
+            }
+            
+            @container cmain (min-width: 30rem){
+                *{
+                    font-size: 1.5rem;
+                    color: red;
+                }
+            }
+            @container caside (min-width: 40rem){
+                h2{
+                    font-size: 3rem;
+                    color: blue;
+                }
+                
+                p{
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h2>MAIN</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla 
+                lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel 
+                class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            </p>
+        </main>
+        <aside>
+            <h2>ASIDE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur...</p>
+        </aside>
+    </body>
+</html>
