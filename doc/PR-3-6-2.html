@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-3-6-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', sans-serif;
+            }
+            
+            .wrapper{
+                width: 95dvh;
+                height: 100dvh;
+                margin: auto;
+            }
+            
+            img{
+                display: block;
+                max-width: 100%;
+            }
+            
+            nav{
+                width: 50%;
+                background-color: burlywood;
+                border: 1px solid black;
+                padding: 20px;
+                margin: auto;
+                
+                & h2{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+                
+                & section{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                container: cnav / inline-size;
+            }
+            
+            main{
+                width: 70%;
+                background-color: cornflowerblue;
+                margin: 10px auto;
+                
+                & h2{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+                
+                & article{
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+                
+                container: cmain / inline-size;
+            }
+            
+            @container (width <= 450px){
+                h2{
+                    background-color: lightsalmon;
+                }
+            }
+            
+            @container (width >= 600px){
+                h2{
+                    color: #500FFF;
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                }
+            }
+            
+            @container (width >= 700px){
+                nav section{
+                    justify-content: space-around;
+                }
+                
+                main article{
+                    flex-flow: row;
+                    justify-content: space-around;
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
+                <h2>Container nav</h2>
+                <section>
+                    <div><img src="http://picsum.photos/id/101/100/100" alt="alt"/></div>
+                    <div><img src="http://picsum.photos/id/102/100/100" alt="alt"/></div>
+                </section>
+            </nav>
+            <main>
+                <h2>Container main</h2>
+                <article>
+                    <div><img src="http://picsum.photos/id/401/100/100" alt="alt"/></div>
+                    <div><img src="http://picsum.photos/id/402/100/100" alt="alt"/></div>
+                    <div><img src="http://picsum.photos/id/403/100/100" alt="alt"/></div>
+                    <div><img src="http://picsum.photos/id/404/100/100" alt="alt"/></div>
+                </article>
+            </main>
+        </div>
+    </body>
+</html>
