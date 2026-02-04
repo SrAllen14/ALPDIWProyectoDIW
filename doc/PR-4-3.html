@@ -13,6 +13,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
+                --color: red;
+                --color2: yellow;
             }
             
             .container{
@@ -21,21 +23,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 height: 300px;
                 background-color: #AAAAAA;
                 margin: 200px auto;
-                align-items: center;
                 justify-content: center;
+                align-items: center;
             }
             
-            .box{
+            .helice{
+                position: relative;
                 width: 50px;
                 height: 50px;
                 background-color: red;
+                border-radius: 10px;
+                box-shadow: 0 80px var(--color2),
+                            0 -80px var(--color2),
+                            80px 0 var(--color),
+                            -80px 0 var(--color);
+                transition: all 1s ease;
                 
+                &:hover{
+                    transform: rotate(360deg);
+                }
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="box">
+            <div class="helice">
                 
             </div>
         </div>
