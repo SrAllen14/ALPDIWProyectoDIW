@@ -9,78 +9,65 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            :root {
-                @property --v {
-                    syntax: "<time>";
-                    inherits: true;
-                    initial-value: 0s;
-                }
-                --color: red;
-                --color2: yellow;
-                --colorbg:#aaa;
+            *{
+            box-sizing: border-box;
+            margin: 0;padding: 0;
+        }
+        :root{
+            --color:red;
+            --color2:yellow;
+            @property --v {
+                syntax: "<time>";
+                inherits: true;
+                initial-value: 0s;
             }
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
+        }
+        .container{
+            width: 500px;height: 500px;
+            background-color: #aaa;
+            margin: 200px auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 2fr 1fr 7fr;
+            place-items: center;
+        }
+        h1{
+            grid-column: 1/-1;
+        }
+        input{
+            display: none;
+        }
+        input:checked + label{
+            background-color: burlywood;
+            filter: invert(1);
+            /* filter: blur(1px); */
+        }
+        label{
+            display: block;
+            font-size: 1.5rem;
+            border: 1px solid var(--color2);
+            grid-row: 2/3;
+        }
+        .helice{
+            grid-column: 1/-1;
+            position: relative;
+            width: 50px;height: 50px;
+            border-radius: 10px;
+            background-color: red;
+            box-shadow: 0 80px var(--color2), 0 -80px var(--color2),
+            80px 0 var(--color), -80px 0 var(--color);
+            transition: all 1s ease;
+            animation: girar var(--v) linear infinite;
+        }
+        @keyframes girar {
+            to{
+                transform: rotate(360deg);
             }
-            .container {
-                width: 500px;
-                height: 500px;
-                background: var(--colorbg);
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: 2fr 1fr 7fr;
-                margin: 100px auto;
-                place-items: center;
-            }
-            h2{
-                grid-column: 1/-1;
-            }
-            input:checked + label{
-                background: burlywood;
-                filter: invert(1);
-            }
-            input{
-                display: none;
-            }
-            label{
-                display: block;
-                font-size: 2rem;
-                grid-row: 2/3;
-                border: 1px solid var(--color2);
-            }
-            .helice {
-                grid-column: 1/-1;
-                width: 50px;
-                height: 50px;
-                background: red;
-                border-radius: 10px;
-                box-shadow:
-                    0 80px var(--color2),
-                    0 -80px var(--color2),
-                    80px 0 var(--color),
-                    -80px 0 var(--color);
-                transition: all 1s ease;
-                animation: girar var(--v) linear infinite;
-            }
-            @keyframes girar{
-                to{
-                    transform: rotate(360deg);
-                }
-            }
-            #x1:checked ~ .helice{
-                --v:5s;
-            }
-            #x2:checked ~ .helice{
-                --v:2.5s;
-            }
-            #x3:checked ~ .helice{
-                --v:1s;
-            }
-            #stop:checked ~ .helice{
-                --v:0s;
-            }
+        }
+        #x1:checked ~ .helice{ --v:5s;}
+        #x2:checked ~ .helice{ --v:2.5s;}
+        #x3:checked ~ .helice{ --v:1s;}
+        #stop:checked ~ .helice{ --v:0s;}
         </style>
     </head>
     <body>

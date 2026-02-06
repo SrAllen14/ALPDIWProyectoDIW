@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PR-4-5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .wrapper{
+                width: 600px;
+                height: 600px;
+                margin: 200px auto;
+                background-color: #EEEEEE;
+                padding: 20px;
+            }
+            
+            .box{
+                position: relative;
+                width: 100px;
+                height: 100px;
+                animation: cuaCir 3s linear;
+            }
+            
+            @keyframes cuaCir{
+                0%, 100%{
+                    top: 0;
+                    left: 0;
+                    background-color: red;
+                }
+                
+                25%{
+                    top: 0;
+                    left: 280px;
+                    border-radius: 50%;
+                    background-color: yellow;
+                }
+                
+                50%{
+                    top: 280px;
+                    left: 280px;
+                    border-radius: 0%;
+                    background-color: blue;
+                }
+                
+                75%{
+                    top: 280px;
+                    left: 0;
+                    border-radius: 50%;
+                    background-color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box">
+                
+            </div>
+        </div>
+    </body>
+</html>
