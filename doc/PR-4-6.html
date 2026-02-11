@@ -29,6 +29,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 background-color: gray;
                 transform: perspective(600px) rotateX(-30deg) rotateY(-30deg);
                 transform-style: preserve-3d;
+                animation: girar3D 5s linear infinite;
             }
             
             .cara{
@@ -41,6 +42,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 background-color: green;
                 transform: rotateY(90deg) translateZ(-150px);
             }
+            
+            .drcha{
+                background-color: blue;
+                transform: rotateY(90deg) translateZ(150px);
+            }
+            
+            .atras{
+                background-color: purple;
+                transform: translateZ(-150px);
+            }
+            .inf{
+                background-color: pink;
+                transform: rotateX(90deg) translateZ(-150px);
+            }
+            .sup{
+                background-color: orange;
+                transform: rotateX(90deg) translateZ(150px);
+            }
+            .frente{
+                background-color: red;
+                transform: translateZ(150px);
+            }
+        @keyframes girar3D {
+            from{
+                transform: rotateX(-180deg) rotateY(-360deg);
+            }
+            to{
+                transform: rotateX(180deg) rotateY(360deg);
+            }
+        }
         </style>
     </head>
     <body>
